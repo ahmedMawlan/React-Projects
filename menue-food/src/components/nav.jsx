@@ -16,7 +16,7 @@ function NaveBar({filterSearch}) {
     }
 
     return (
-        <Navbar expand="lg"  className="bg-body-tertiary mb-3 " data-bs-theme="dark">
+        <Navbar expand="lg" className="bg-body-tertiary mb-3 " data-bs-theme="dark">
         <Container >
             <Navbar href="#" className='brand-color' ><h2>مطعم جديد</h2></Navbar>
             <Navbar.Toggle aria-controls="navbarScroll" />
@@ -35,7 +35,7 @@ function NaveBar({filterSearch}) {
                 className="me-5"
                 aria-label="Search"
                 onChange={(e)=> setSearchValue  (e.target.value)}
-                value={searchValue}
+                value={searchValue} 
                 />
                 <Button onClick={()=> onSearch()} variant="outline-warning me-5">بحـث</Button>
             </Form>

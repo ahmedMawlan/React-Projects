@@ -4,6 +4,7 @@ import NotFound from './notFound'
 function CardEx({ data}) {
   return (
     <div className='card'>
+
         {
           data.length? (data.map ((item) =>{
             return(
@@ -18,7 +19,6 @@ function CardEx({ data}) {
           }) ): <NotFound />
         }
         
-      
     </div>
   );
 }
